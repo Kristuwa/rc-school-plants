@@ -49,7 +49,7 @@
               <a href="#service" class="site-nav__link link">Service</a>
             </li>
             <li class="site-nav__item">
-              <a href="#price" class="site-nav__link link">Price</a>
+              <a href="#prices" class="site-nav__link link">Price</a>
             </li>
             <li class="site-nav__item">
               <a href="#contacts" class="site-nav__link link">Contacts</a>
@@ -118,56 +118,110 @@
           />
         </div>
       </section>
-      <!-- <section id="service" class='service'><div class="container">
-			<h2 class="service__title">Service and our projects</h2>
-			<button class="button service__button">Gardens</button>
-			<button class="button service__button">Lawn</button>
-			<button class="button service__button">Planting</button>
+     <section id="service" class='service'><div class="container">
+		<div class="title-container"><h2 class="service__title">Service and our projects</h2>
+			<div class="button-container"><button class="button service__button">Gardens</button>
+				<button class="button service__button">Lawn</button>
+				<button class="button service__button">Planting</button></div>
+			</div>
+
+			
 			<ul class="service__list list-style">
-            <li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Garden care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
+            <li class="service__item"> <img class="service__img"
+					srcset="./images/service-desktop-01.jpg 1x, ./images/service-desktop-01@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-01.jpg"
+					width="329"
+					height="350"
+					alt="Garden care"
+				 /><div class="text-content">
+				<h3 class="card-title">Garden care</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
 			</li>
-			<li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
+			<li class="service__item"><img class="service__img"
+					srcset="./images/service-desktop-02.jpg 1x, ./images/service-desktop-02@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-02.jpg"
+					width="329"
+					height="350"
+					alt="Planting"
+				 /><div class="text-content">
+				<h3 class="card-title">Planting</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
 			</li>
-			<li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Lawn care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
+			<li class="service__item"><img class="service__img"
+					srcset="./images/service-desktop-03.jpg 1x, ./images/service-desktop-03@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-03.jpg"
+					width="329"
+					height="350"
+					alt="Lawn care"
+				 /><div class="text-content">
+				<h3 class="card-title">Lawn care</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
 			</li>
-			<li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
-			</li>     <li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Garden care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
+			<li class="service__item"><img class="service__img"
+					srcset="./images/service-desktop-04.jpg 1x, ./images/service-desktop-04@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-04.jpg"
+					width="329"
+					height="350"
+					alt="Planting"
+				 /><div class="text-content">
+				<h3 class="card-title">Planting</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
 			</li>
-			<li class="service__item"><img src="" alt>
-				<h3 class="card-tite">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p>
+			<li class="service__item"><img class="service__img"
+					srcset="./images/service-desktop-05.jpg 1x, ./images/service-desktop-05@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-05.jpg"
+					width="329"
+					height="350"
+					alt="Garden care"
+				 /><div class="text-content">
+				<h3 class="card-title">Garden care</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
+			</li>
+			<li class="service__item"><img class="service__img"
+					srcset="./images/service-desktop-06.jpg 1x, ./images/service-desktop-06@2x.jpg 2x"
+					sizes="(min-width: 1440px) 329px, 100vw"
+					src="./images/service-desktop-06.jpg"
+					width="329"
+					height="350"
+					alt="Planting"
+				 /><div class="text-content">
+				<h3 class="card-title">Planting</h3>
+				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
 			</li>
 		</div></section>
-		<section id="prices" class='prices'><div class="container">
-			<h2 class="prices__title">Prices</h2>
-		<ul class="prices__list list-style">
-			<li class="prices__item"><p>Basics</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
-									<use href="./images/icons.svg#icon-arrow"
-									></use>
-								</svg></button></li>
-			<li class="prices__item"><p>Standard</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
-				<use href="./images/icons.svg#icon-arrow"
-				></use>
-			</svg></button></li>
-			<li class="prices__item"><p>Pro care</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
-				<use href="./images/icons.svg#icon-arrow"
-				></use>
-			</svg></button></li>
-		</ul>
-		<p class="prices__text">Our best gardeners are ready to help you</p>
-		<button type="button" class="button prices__button">Contact us</button>
+		  <section id="prices" class='prices'><div class="container">
+			<div class="prices-block"><h2 class="prices__title">Prices</h2>
+				<ul class="prices__list list-style">
+					<li class="prices__item"><p class="btn-title">Basics</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
+											<use href="./images/icons.svg#icon-arrow"
+											></use>16									</svg></button></li>
+					<li class="prices__item"><p class="btn-title">Standard</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
+						<use href="./images/icons.svg#icon-arrow"
+						></use>
+					</svg></button></li>
+					<li class="prices__item"><p class="btn-title">Pro care</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
+						<use href="./images/icons.svg#icon-arrow"
+						></use>
+					</svg></button></li>
+				</ul></div>
+			<div class="contacts-block"><p class="prices__text">Our best <span class="prices__text--green">gardeners</span> are ready to help you</p>
+				<button type="button" class="button prices__button">Contact us</button>
+				<img class="prices__img"
+				srcset="./images/leafs-prices.png 1x, ./images/leafs-prices@2x.png 2x"
+				sizes="(min-width: 1440px) 152px, 100vw"
+				src="./images/leafs-prices.png"
+				width="152"
+				height="175"
+				alt="Leafs"
+			 /></div>
+		
 	</div></section>
-		<section id="contacts" class='contacts'><div class="container">
+	 <!--	<section id="contacts" class='contacts'><div class="container">
 			<h2 class="contacts__title">Contact us</h2>
 			<p>City</p>
 			<button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
