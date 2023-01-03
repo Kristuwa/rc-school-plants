@@ -18,51 +18,107 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style.css/style.css" />
   </head>
   <body>
     <!-- Header сайта -->
 
-	 <header>
+    <header>
       <div class="header container">
         <nav class="header__nav">
-          <a href="./index.html" class="logo link"><span class="logo__title">Plants</a>
-         
-
-            <ul class="site-nav list-style">
-              <li class="site-nav__item">
-                <a href="./index.html" class="site-nav__link link site-nav__link--active">Home</a>
-              </li>
-              <li class="site-nav__item">
-                <a href="#about" class="site-nav__link link">About us</a>
-              </li>
-              <li class="site-nav__item"><a href="#service" class="site-nav__link link">Service</a></li>
-				  <li class="site-nav__item"><a href="#price" class="site-nav__link link">Price</a></li>
-				  <li class="site-nav__item"><a href="#contacts" class="site-nav__link link">Contacts</a></li>
-            </ul>
-            
-
+          <a href="./index.html" class="logo link"
+            ><p class="logo__title">
+              <span class="logo__icon"
+                ><svg class="icon-logo" width="20" height="20">
+                  <use href="./images/icons.svg#icon-logo"></use></svg></span
+              >Plants
+            </p></a
+          >
+          <ul class="site-nav list-style">
+            <li class="site-nav__item">
+              <a
+                href="./index.html"
+                class="site-nav__link link site-nav__link--active"
+                >Home</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="#about" class="site-nav__link link">About us</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#service" class="site-nav__link link">Service</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#price" class="site-nav__link link">Price</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#contacts" class="site-nav__link link">Contacts</a>
+            </li>
+          </ul>
         </nav>
-
-		  
       </div>
     </header>
-	  <!-- Main сайта -->
+    <!-- Main сайта -->
 
-	  <main>
+    <main>
       <section class="welcome">
         <div class="container">
-          <h1 class="welcome__title">We grow plants and give you oxygen</h1>
-			 <p class="welcome__bottom-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-          <button type="button" class="welcome__button button" data-modal-open>LEARN MORE</button>
-         
+          <img
+            srcset="./images/leafs-hero.png 1x, ./images/leafs-hero@2x.png 2x"
+            sizes="(min-width: 1440px) 462px, 100vw"
+            src="./images/leafs-hero.png"
+            width="462"
+            height="424"
+            alt="Leafs"
+          />
+          <div class="welcome-text">
+            <h1 class="welcome__title">
+              We grow <span class="welcome__title---green">plants</span> and
+              give you oxygen
+            </h1>
+            <p class="welcome__bottom-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s.
+            </p>
+            <button
+              type="button"
+              class="welcome__button button"
+              data-modal-open
+            >
+              LEARN MORE
+            </button>
+          </div>
         </div>
-      </section >
-		<section id="about" class='about'><div class="container">
-			<h2 class="about__title">We are professional experienced gardeners</h2>
-			<p class="about__bottom-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-		</div></section>
-		<section id="service" class='service'><div class="container">
+      </section>
+      <section id="about" class="about">
+        <div class="container">
+          <div class="about-text-container">
+            <h2 class="about__title">
+              We are
+              <span class="about__title--orange">professional experienced</span>
+              gardeners
+            </h2>
+            <p class="about__bottom-text">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer took a galley of
+              type and scrambled it to make a type specimen book. It has
+              survived not only five centuries, but also the leap into
+              electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+          <img
+            srcset="./images/houseplant.png 1x, ./images/houseplant@2x.png 2x"
+            sizes="(min-width: 1440px) 464px, 100vw"
+            src="./images/houseplant.png"
+            width="464"
+            height="479"
+            alt="houseplant"
+          />
+        </div>
+      </section>
+      <!-- <section id="service" class='service'><div class="container">
 			<h2 class="service__title">Service and our projects</h2>
 			<button class="button service__button">Gardens</button>
 			<button class="button service__button">Lawn</button>
@@ -95,16 +151,100 @@
 		<section id="prices" class='prices'><div class="container">
 			<h2 class="prices__title">Prices</h2>
 		<ul class="prices__list list-style">
-			<li class="prices__item"></li>
+			<li class="prices__item"><p>Basics</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
+									<use href="./images/icons.svg#icon-arrow"
+									></use>
+								</svg></button></li>
+			<li class="prices__item"><p>Standard</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
+				<use href="./images/icons.svg#icon-arrow"
+				></use>
+			</svg></button></li>
+			<li class="prices__item"><p>Pro care</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
+				<use href="./images/icons.svg#icon-arrow"
+				></use>
+			</svg></button></li>
 		</ul>
+		<p class="prices__text">Our best gardeners are ready to help you</p>
+		<button type="button" class="button prices__button">Contact us</button>
 	</div></section>
-		<section id="contacts" class='contacts'><div class="container"></div></section>
-	  </main>
-	      <!-- Footer сайта -->
+		<section id="contacts" class='contacts'><div class="container">
+			<h2 class="contacts__title">Contact us</h2>
+			<p>City</p>
+			<button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="20" height="20">
+				<use href="./images/icons.svg#icon-arrow"
+				></use>
+			</svg></button>
+		</div></section>-->
+    </main>
+    <!-- Footer сайта -->
 
-			<footer class="footer">
-				<div class="container footer__container">
-								</div>
-			 </footer>
+    <!-- <footer class="footer">
+      <div class="container footer__container">
+        <p>2022</p>
+        <a
+          href="https://github.com/Kristuwa"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
+          >github</a
+        ><a href="" target="_blank" rel="noreferrer noopener nofollow"
+          >Rolling Scopes School</a
+        >
+        <ul class="socpublic list-style">
+          <li class="socpublic-item">
+            <a
+              href="https://www.instagram.com/"
+              class="socpublic-link footer-icon link"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="instagram"
+            >
+              <svg class="icon-socpublic" width="20" height="20">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+
+          <li class="socpublic-item">
+            <a
+              href="https://www.facebook.com/"
+              class="socpublic-link footer-icon link"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="facebook"
+            >
+              <svg class="icon-socpublic" width="20" height="20">
+                <use href="./images/icons.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic-item">
+            <a
+              href="https://www.twitter.com/"
+              class="socpublic-link footer-icon link"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="twitter"
+            >
+              <svg class="icon-socpublic" width="20" height="20">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socpublic-item">
+            <a
+              href="https://www.pinterest.com/"
+              class="socpublic-link footer-icon link"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              aria-label="pinterest"
+            >
+              <svg class="icon-socpublic" width="20" height="20">
+                <use href="./images/icons.svg#icon-pinterest"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer> -->
   </body>
 </html>
