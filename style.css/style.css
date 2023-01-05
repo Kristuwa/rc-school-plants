@@ -108,6 +108,11 @@ header {
   color: var(--btn-hover-background);
 }
 
+.icon-logo {
+  fill: none;
+  stroke: var(--primary-text-title-color);
+}
+
 /* ----------------------WELCOME------------------ */
 .welcome {
   background-color: var(--primary-bg-color);
@@ -263,10 +268,8 @@ header {
 .prices .container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 60px;
 }
-.prices-block {
-}
+
 .prices__title {
   font-weight: 700;
   font-size: 40px;
@@ -347,7 +350,7 @@ header {
 .prices__button {
   width: 162px;
   height: 50px;
-  font-family: "Inika";
+  font-family: Inika, serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 1.3;
@@ -360,4 +363,174 @@ header {
 
 .prices__img {
   margin-left: auto;
+}
+
+/* ----------------------CONTACTS------------------ */
+
+.contacts {
+  background-color: var(--primary-bg-color);
+  padding-top: 53px;
+}
+
+.contacts .container {
+  display: flex;
+}
+
+.contacts-form {
+  width: calc(100% - 400px);
+  padding-top: 7px;
+  margin-left: 113px;
+}
+
+.contacts__title {
+  font-family: Inika, serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.3;
+  color: var(--primary-text-title-color);
+  margin-bottom: 37px;
+}
+.dropdown-menu {
+  position: relative;
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 35px;
+  width: 450px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #d6e7d2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: background-color var(--time) var(--function-animation),
+    border var(--time) var(--function-animation);
+}
+
+.dropdown-menu:hover,
+.dropdown-menu:focus {
+  background-color: #c1e698;
+  border: 1px solid #d6e7d2;
+}
+
+.dropdown-menu:hover .btn,
+.dropdown-menu:focus .btn {
+  background: #8ba07e;
+}
+
+.dropdown-menu:hover .icon-btn,
+.dropdown-menu:focus .icon-btn {
+  transform: rotate(-180deg);
+}
+
+.dropdown-menu:hover .city-menu,
+.dropdown-menu:focus .city-menu {
+  display: block;
+  position: absolute;
+  top: 50px;
+  width: 450px;
+  padding: 27px 35px 31px;
+  background-color: #d6e7d2;
+}
+
+.city-menu {
+  display: none;
+}
+
+.city-menu__item + .city-menu__item {
+  margin-top: 12px;
+}
+.city-menu__text {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 2.5;
+  letter-spacing: 0.05em;
+  color: var(--primary-text-title-color);
+  border-bottom: 1px solid #d9d9d9;
+}
+
+.menu-text {
+  font-size: 20px;
+  line-height: 2;
+  letter-spacing: 0.05em;
+  margin-left: 20px;
+}
+.btn {
+  cursor: pointer;
+  transition: background-color var(--time) var(--function-animation);
+}
+.icon-btn {
+  fill: none;
+  stroke: var(--btn-color-hover);
+  transition: transform var(--time) var(--function-animation);
+}
+
+.city-menu__text:hover,
+.city-menu__text:focus {
+  color: var(--secondary-text-color);
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+/* ----------------------FOOTER------------------ */
+
+.footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.footer .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__text-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.footer__text {
+  font-size: 20px;
+  line-height: 2.5;
+  color: var(--btn-color);
+}
+.copyright {
+  margin-right: 20px;
+}
+.footer__link {
+  font-size: 20px;
+  line-height: 2.5;
+  color: var(--btn-color);
+  transition: color var(--time) var(--function-animation);
+}
+
+.socpublic {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.socpublic-link {
+  color: var(--btn-color);
+  transition: color var(--time) var(--function-animation);
+}
+
+.socpublic-link:hover,
+.socpublic-link:focus {
+  color: var(--secondary-text-title-color);
+}
+.footer__main-link {
+  font-size: 20px;
+  line-height: 2.5;
+  color: var(--btn-color);
+  transition: color var(--time) var(--function-animation);
+}
+
+.footer__link:hover,
+.footer__link:focus,
+.footer__main-link:hover,
+.footer__main-link:focus {
+  color: var(--secondary-text-title-color);
+}
+.footer-icon {
+  fill: currentColor;
 }
