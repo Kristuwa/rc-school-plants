@@ -15,14 +15,14 @@
 
 html {
   box-sizing: border-box;
- 
+  scroll-behavior: smooth;
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
-	body {
-		scroll-behavior: auto;
-	}
- }
+  body {
+    scroll-behavior: smooth;
+  }
+}
 
 body {
   color: var(--primary-text-color);
@@ -51,6 +51,7 @@ img {
 }
 
 .container {
+  max-width: 1440px;
   width: 1440px;
   padding-left: 109px;
   padding-right: 109px;
@@ -102,23 +103,22 @@ header {
   gap: 46px;
 }
 
-.logo{
-	font-family: Inika, serif;
-	margin-left:2px;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.31;
-	color: var(--link-color);
-transition: color var(--time) var(--function-animation);
+.logo {
+  font-family: Inika, serif;
+  margin-left: 2px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.31;
+  color: var(--link-color);
+  transition: color var(--time) var(--function-animation);
 }
-
 
 .site-nav__link {
   color: var(--link-color);
   font-family: Inika, serif;
   font-size: 16px;
   font-weight: 700;
-line-height: 3.12;
+  line-height: 3.12;
   transition: color var(--time) var(--function-animation);
 }
 
@@ -130,7 +130,6 @@ line-height: 3.12;
 }
 
 .icon-logo {
-	
   fill: none;
   stroke: var(--primary-text-title-color);
 }
@@ -535,7 +534,7 @@ line-height: 3.12;
 
 .socpublic-link {
   color: var(--btn-color);
-  
+
   transition: color var(--time) var(--function-animation);
 }
 
