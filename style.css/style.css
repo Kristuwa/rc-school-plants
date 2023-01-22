@@ -194,13 +194,16 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    opacity: 1;
     position: fixed;
     z-index: 1;
+    transform: translateY(0);
   }
-  .menu-container {
-    display: none;
 
+  .menu-container {
+    overflow: hidden;
+    transform: translateY(-100%);
+    transition: 1000ms all;
     padding: 48px 40px;
     position: absolute;
     top: 0;
