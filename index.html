@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Free Web tutorials">
-    <meta name="keywords" content="HTML, CSS, JavaScript">
-    <meta name="author" content="Kristina Krasovska">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML, CSS, JavaScript" />
+    <meta name="author" content="Kristina Krasovska" />
     <title>Plants</title>
-	 <link
-	 rel="icon"
-	 type="image/png"
-	 sizes="32x32"
-	 href="./images/leaf.png"
-  >
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/leaf.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-   >
-    <link rel="stylesheet" href="./style.css/style.css">
+    />
+    <link rel="stylesheet" href="./style.css/style.css" />
   </head>
   <body>
     <!-- Header сайта -->
@@ -37,27 +35,52 @@
               >Plants
             </p></a
           >
-          <ul class="site-nav list-style">
-            <li class="site-nav__item">
-              <a
-                href="./index.html"
-                class="site-nav__link link site-nav__link--active"
-                >Home</a
-              >
-            </li>
-            <li class="site-nav__item">
-              <a href="#about" class="site-nav__link link">About us</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#service" class="site-nav__link link">Service</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#prices" class="site-nav__link link">Price</a>
-            </li>
-            <li class="site-nav__item">
-              <a href="#contacts" class="site-nav__link link">Contacts</a>
-            </li>
-          </ul>
+          <button
+            type="button"
+            class="header__menu-btn"
+            data-menu-btn
+            aria-expanded="false"
+          >
+            <svg
+              width="40"
+              height="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="menu-container"
+            >
+              <use
+                href="./images/icons.svg#icon-close-btn"
+                class="header__icon-close-btn"
+              ></use>
+              <use
+                href="./images/icons.svg#icon-burger"
+                class="header__icon-menu"
+              ></use>
+            </svg>
+          </button>
+
+          <div class="menu-container" id="menu-container" data-menu>
+            <ul class="site-nav list-style">
+              <li class="site-nav__item">
+                <a
+                  href="./index.html"
+                  class="site-nav__link link site-nav__link--active"
+                  >Home</a
+                >
+              </li>
+              <li class="site-nav__item">
+                <a href="#about" class="site-nav__link link">About us</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#service" class="site-nav__link link">Service</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#prices" class="site-nav__link link">Price</a>
+              </li>
+              <li class="site-nav__item">
+                <a href="#contacts" class="site-nav__link link">Contacts</a>
+              </li>
+            </ul>
+          </div>
         </nav>
       </div>
     </header>
@@ -67,12 +90,19 @@
       <section class="welcome">
         <div class="container">
           <img
-            srcset="./images/leafs-hero.png 462w, ./images/leafs-hero@2x.png 924w"
-             sizes="(min-width: 1440px) 462px, 100vw" 
+            srcset="
+              ./images/leafs-hero.png           462w,
+              ./images/leafs-hero@2x.png        924w,
+              ./images/leafs-hero-tablet.png    280w,
+              ./images/leafs-hero-tablet@2x.png 560w
+            "
+            sizes="(min-width: 1440px) 462px,(min-width: 768px) 280px, 100vw"
             src="./images/leafs-hero.png"
             width="462"
             height="424"
-            alt="Leafs">
+            alt="Leafs"
+            class="welcome__img"
+          />
           <div class="welcome-text">
             <h1 class="welcome__title">
               We grow <span class="welcome__title---green">plants</span> and
@@ -111,156 +141,314 @@
             </p>
           </div>
           <img
-            srcset="./images/houseplant.png 464w, ./images/houseplant@2x.png 928w"
-            sizes="(min-width: 1440px) 464px, 100vw"
+            class="about__img"
+            srcset="
+              ./images/houseplant.png           464w,
+              ./images/houseplant@2x.png        928w,
+				  ./images/houseplant-tablet.png   250w,
+              ./images/houseplant-tablet@2x.png 500w
+              ./images/houseplant-mob.png       150w,
+              ./images/houseplant-mob@2x.png    300w,
+              
+            "
+            sizes="(min-width: 1440px) 464px,(min-width: 768px) 250px,(min-width: 320px) 150px, 100vw"
             src="./images/houseplant.png"
             width="464"
             height="479"
-            alt="houseplant">
+            alt="houseplant"
+          />
         </div>
       </section>
-     <section id="service" class='service'><div class="container">
-		<div class="title-container"><h2 class="service__title">Service and our projects</h2>
-			<div class="button-container"><button class="button service__button">Gardens</button>
-				<button class="button service__button">Lawn</button>
-				<button class="button service__button">Planting</button></div>
-			</div>
+      <section id="service" class="service">
+        <div class="container">
+          <div class="title-container">
+            <h2 class="service__title">Service and our projects</h2>
+            <div class="button-container">
+              <button class="button service__button">Gardens</button>
+              <button class="button service__button">Lawn</button>
+              <button class="button service__button">Planting</button>
+            </div>
+          </div>
 
-			
-			<ul class="service__list list-style">
-            <li class="service__item"> <img class="service__img"
-					srcset="./images/service-desktop-01.jpg 329w, ./images/service-desktop-01@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-01.jpg"
-					width="329"
-					height="350"
-					alt="Garden care"><div class="text-content">
-				<h3 class="card-title">Garden care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li>
-			<li class="service__item"><img class="service__img"
-					srcset="./images/service-desktop-02.jpg 329w, ./images/service-desktop-02@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-02.jpg"
-					width="329"
-					height="350"
-					alt="Planting"><div class="text-content">
-				<h3 class="card-title">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li>
-			<li class="service__item"><img class="service__img"
-					srcset="./images/service-desktop-03.jpg 329w, ./images/service-desktop-03@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-03.jpg"
-					width="329"
-					height="350"
-					alt="Lawn care"><div class="text-content">
-				<h3 class="card-title">Lawn care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li>
-			<li class="service__item"><img class="service__img"
-					srcset="./images/service-desktop-04.jpg 329w, ./images/service-desktop-04@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-04.jpg"
-					width="329"
-					height="350"
-					alt="Planting"><div class="text-content">
-				<h3 class="card-title">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li>
-			<li class="service__item"><img class="service__img"
-					srcset="./images/service-desktop-05.jpg 329w, ./images/service-desktop-05@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-05.jpg"
-					width="329"
-					height="350"
-					alt="Garden care"><div class="text-content">
-				<h3 class="card-title">Garden care</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li>
-			<li class="service__item"><img class="service__img"
-					srcset="./images/service-desktop-06.jpg 329w, ./images/service-desktop-06@2x.jpg 658w"
-					sizes="(min-width: 1440px) 329px, 100vw"
-					src="./images/service-desktop-06.jpg"
-					width="329"
-					height="350"
-					alt="Planting"><div class="text-content">
-				<h3 class="card-title">Planting</h3>
-				<p class="card-bottom-text">Lorem Ipsum has been the industry</p></div>
-			</li></ul>
-
-		</div></section>
-		  <section id="prices" class='prices'><div class="container">
-			<div class="prices-block"><h2 class="prices__title">Prices</h2>
-				<ul class="prices__list list-style">
-					<li class="prices__item"><p class="btn-title">Basics</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
-											<use href="./images/icons.svg#icon-arrow"
-											></use></svg></button></li>
-					<li class="prices__item"><p class="btn-title">Standard</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
-						<use href="./images/icons.svg#icon-arrow"
-						></use>
-					</svg></button></li>
-					<li class="prices__item"><p class="btn-title">Pro care</p><button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="8" height="8">
-						<use href="./images/icons.svg#icon-arrow"
-						></use>
-					</svg></button></li>
-				</ul></div>
-			<div class="contacts-block"><p class="prices__text">Our best <span class="prices__text--green">gardeners</span> are ready to help you</p>
-				<button type="button" class="button prices__button">Contact us</button>
-				<img class="prices__img"
-				srcset="./images/leafs-prices.png 152w, ./images/leafs-prices@2x.png 304w"
-				sizes="(min-width: 1440px) 152px, 100vw"
-				src="./images/leafs-prices.png"
-				width="152"
-				height="175"
-				alt="Leafs"></div>
-		
-	</div></section>
-	 	<section id="contacts" class='contacts'><div class="container">
-			
-			<img
-			srcset="./images/contact_woman.png 464w, ./images/contact_woman@2x.png 928w"
-			sizes="(min-width: 1440px) 464px, 100vw"
-			src="./images/contact_woman.png"
-			width="400"
-			height="497"
-			alt="woman">
-		 <div class="contacts-form"><h2 class="contacts__title">Contact us</h2>
-			<div class="dropdown-menu"><p class="menu-text">City</p>
-				<button type="button" class="btn" aria-label="open dropdown menu"><svg class="icon-btn" width="6" height="3">
-					<use href="./images/icons.svg#icon-arrow"
-					></use>
-				</svg></button>
-			<ul class="list-style city-menu">
-				<li class="city-menu__item">
-					<p class="city-menu__text">Canandaigua, NY</p>
-				</li>
-				<li class="city-menu__item">
-					<p class="city-menu__text">New York City</p>
-				</li>
-				<li class="city-menu__item">
-					<p class="city-menu__text">Yonkers, NY</p>
-				</li>
-				<li class="city-menu__item">
-					<p class="city-menu__text">Sherrill, NY</p>
-				</li>
-			</ul></div></div>
-		 
-		</div></section>
+          <ul class="service__list list-style">
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-01.jpg    329w,
+                  ./images/service-desktop-01@2x.jpg 658w,
+                  ./images/service-tab-01.jpg        280w,
+                  ./images/service-tab-01@2x.jpg     560w,
+                  ./images/service-mob-01.jpg        279w,
+                  ./images/service-mob-01@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-01.jpg"
+                width="329"
+                height="350"
+                alt="Garden care"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Garden care</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-02.jpg    329w,
+                  ./images/service-desktop-02@2x.jpg 658w,
+                  ./images/service-tab-02.jpg        280w,
+                  ./images/service-tab-02@2x.jpg     560w,
+                  ./images/service-mob-02.jpg        279w,
+                  ./images/service-mob-02@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-02.jpg"
+                width="329"
+                height="350"
+                alt="Planting"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Planting</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-03.jpg    329w,
+                  ./images/service-desktop-03@2x.jpg 658w,
+                  ./images/service-tab-03.jpg        280w,
+                  ./images/service-tab-03@2x.jpg     560w,
+                  ./images/service-mob-03.jpg        279w,
+                  ./images/service-mob-03@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-03.jpg"
+                width="329"
+                height="350"
+                alt="Lawn care"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Lawn care</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-04.jpg    329w,
+                  ./images/service-desktop-04@2x.jpg 658w,
+                  ./images/service-tab-04.jpg        280w,
+                  ./images/service-tab-04@2x.jpg     560w,
+                  ./images/service-mob-04.jpg        279w,
+                  ./images/service-mob-04@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-04.jpg"
+                width="329"
+                height="350"
+                alt="Planting"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Planting</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-05.jpg    329w,
+                  ./images/service-desktop-05@2x.jpg 658w,
+                  ./images/service-tab-05.jpg        280w,
+                  ./images/service-tab-05@2x.jpg     560w,
+                  ./images/service-mob-05.jpg        279w,
+                  ./images/service-mob-05@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-05.jpg"
+                width="329"
+                height="350"
+                alt="Garden care"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Garden care</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+            <li class="service__item">
+              <img
+                class="service__img"
+                srcset="
+                  ./images/service-desktop-06.jpg    329w,
+                  ./images/service-desktop-06@2x.jpg 658w,
+                  ./images/service-tab-06.jpg        280w,
+                  ./images/service-tab-06@2x.jpg     560w,
+                  ./images/service-mob-06.jpg        279w,
+                  ./images/service-mob-06@2x.jpg     558w
+                "
+                sizes="(min-width: 1440px) 329px,(min-width: 768px) 280px,(min-width: 320px) 279px, 100vw"
+                src="./images/service-desktop-06.jpg"
+                width="329"
+                height="350"
+                alt="Planting"
+              />
+              <div class="text-content">
+                <h3 class="card-title">Planting</h3>
+                <p class="card-bottom-text">
+                  Lorem Ipsum has been the industry
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="prices" class="prices">
+        <div class="container">
+          <div class="prices-block">
+            <h2 class="prices__title">Prices</h2>
+            <ul class="prices__list list-style">
+              <li class="prices__item">
+                <p class="btn-title">Basics</p>
+                <button
+                  type="button"
+                  class="btn"
+                  aria-label="open dropdown menu"
+                >
+                  <svg class="icon-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="prices__item">
+                <p class="btn-title">Standard</p>
+                <button
+                  type="button"
+                  class="btn"
+                  aria-label="open dropdown menu"
+                >
+                  <svg class="icon-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </li>
+              <li class="prices__item">
+                <p class="btn-title">Pro care</p>
+                <button
+                  type="button"
+                  class="btn"
+                  aria-label="open dropdown menu"
+                >
+                  <svg class="icon-btn" width="8" height="8">
+                    <use href="./images/icons.svg#icon-arrow"></use>
+                  </svg>
+                </button>
+              </li>
+            </ul>
+          </div>
+          <div class="contacts-block">
+            <p class="prices__text">
+              Our best <span class="prices__text--green">gardeners</span> are
+              ready to help you
+            </p>
+            <button type="button" class="button prices__button">
+              Contact us
+            </button>
+            <img
+              class="prices__img"
+              srcset="
+                ./images/leafs-prices.png    152w,
+                ./images/leafs-prices@2x.png 304w
+              "
+              sizes="(min-width: 768px) 152px,100vw"
+              src="./images/leafs-prices.png"
+              width="152"
+              height="175"
+              alt="Leafs"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="contacts" class="contacts">
+        <div class="container">
+          <div class="contacts-form">
+            <h2 class="contacts__title">Contact us</h2>
+            <div class="dropdown-menu">
+              <p class="menu-text">City</p>
+              <button type="button" class="btn" aria-label="open dropdown menu">
+                <svg class="icon-btn" width="6" height="3">
+                  <use href="./images/icons.svg#icon-arrow"></use>
+                </svg>
+              </button>
+              <ul class="list-style city-menu">
+                <li class="city-menu__item">
+                  <p class="city-menu__text">Canandaigua, NY</p>
+                </li>
+                <li class="city-menu__item">
+                  <p class="city-menu__text">New York City</p>
+                </li>
+                <li class="city-menu__item">
+                  <p class="city-menu__text">Yonkers, NY</p>
+                </li>
+                <li class="city-menu__item">
+                  <p class="city-menu__text">Sherrill, NY</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <img
+            class="contacts__img"
+            srcset="
+              ./images/contact_woman.png        400w,
+              ./images/contact_woman@2x.png     800w,
+              ./images/contact_woman-tab.png    200w,
+              ./images/contact_woman-tab@2x.png 400w,
+              ./images/contact_woman-mob.png    100w,
+              ./images/contact_woman-mob@2x.png 200w
+            "
+            sizes="(min-width:1440px) 400px, (min-width:768px) 200px,(min-width:320px) 100px, 100vw"
+            src="./images/contact_woman.png"
+            width="400"
+            height="497"
+            alt="woman"
+          />
+        </div>
+      </section>
     </main>
     <!-- Footer сайта -->
 
     <footer class="footer">
       <div class="container footer__container">
-			<div class="footer__text-content">  <p class="footer__text"><span class="copyright">&copy;</span> 2022</p>
-				<a
-				class="footer__link link"
-				  href="https://github.com/Kristuwa"
-				  target="_blank"
-				  rel="noreferrer noopener nofollow"
-				  >github</a
-				></div>
-      <a class="footer__main-link link" href="https://rs.school/js-stage0/" target="_blank" rel="noreferrer noopener nofollow"
+        <div class="footer__text-content">
+          <p class="footer__text"><span class="copyright">&copy;</span> 2022</p>
+          <a
+            class="footer__link link"
+            href="https://github.com/Kristuwa"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+            >github</a
+          >
+        </div>
+        <a
+          class="footer__main-link link"
+          href="https://rs.school/js-stage0/"
+          target="_blank"
+          rel="noreferrer noopener nofollow"
           >Rolling Scopes School</a
         >
         <ul class="socpublic list-style">
@@ -320,5 +508,7 @@
         </ul>
       </div>
     </footer>
+    <script defer src="./js/mobile-menu.js" type="module"></script>
+    <script defer src="./js/index.js" type="module"></script>
   </body>
 </html>
