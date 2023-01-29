@@ -6,7 +6,6 @@
   const toggleMenu = () => {
     mobileMenuRef.classList.toggle("is-open");
     menuBtnRef.classList.toggle("is-open");
-    document.body.classList.toggle("is-open");
   };
 
   linkBtn.addEventListener("click", (e) => {
