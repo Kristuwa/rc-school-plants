@@ -472,6 +472,11 @@ header {
   color: var(--btn-hover-background);
 }
 
+.service__button.active {
+  color: var(--btn-color-hover);
+  background-color: var(--btn-hover-background);
+}
+
 .service__list {
   margin: 0 auto;
   display: flex;
@@ -479,6 +484,11 @@ header {
   flex-wrap: wrap;
   row-gap: 34px;
 }
+
+.service__item.active {
+  filter: blur(2px);
+}
+
 .service__img {
   border-radius: 20px 20px 0px 0px;
   background-color: var(--primary-bg-color);
