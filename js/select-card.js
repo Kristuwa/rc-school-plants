@@ -19,7 +19,8 @@
       //если нажато уже 2 кнопки, то класс не добавляем
       if (activeListBtn.length <= 2) {
         e.target.classList.add("active");
-        console.log(activeListBtn);
+        e.target.style = "color: #ffffff; background-color: #e06733";
+
         if (activeListBtn.length === 2) {
           [...buttonsList].map((item) => {
             if (item.classList.contains("active")) {
@@ -30,15 +31,6 @@
           });
         }
       }
-      // else {
-      // 	[...buttonsList].map((item) => {
-      // 	  console.log(item.disabled);
-      // 	  if (item.classList.contains("active")) {
-      // 		 item.disabled = true;
-      // 	  }
-      // 	  item.disabled = false;
-      // 	});
-      //  }
     }
     // при повторном нажатии проверяем,если есть в массиве активных кнопок, то убираем класс и удаляем из массива
     else {
@@ -46,6 +38,7 @@
         (item) => item !== e.target.dataset.name
       );
       e.target.classList.remove("active");
+      e.target.style = "color: #e06733; background-color:transparent";
       if (activeListBtn.length === 1) {
         [...buttonsList].map((item) => {
           item.disabled = false;

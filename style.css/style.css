@@ -93,11 +93,12 @@ a {
     background-color var(--time) var(--function-animation);
 }
 
-/* .button:hover,
+.button:hover,
 .button:focus {
+  transition-delay: 5ms;
   color: var(--btn-color-hover);
   background-color: var(--btn-hover-background);
-} */
+}
 
 /* ----------------------HEADER------------------ */
 header {
@@ -470,12 +471,14 @@ header {
   font-size: 15px;
   line-height: 1.33;
   color: var(--btn-hover-background);
+  transition: color 500ms var(--function-animation),
+    background-color 500ms var(--function-animation);
 }
 
-.service__button.active {
+/* .service__button.active {
   color: var(--btn-color-hover);
   background-color: var(--btn-hover-background);
-}
+} */
 
 .service__list {
   margin: 0 auto;
@@ -483,6 +486,10 @@ header {
   justify-content: center;
   flex-wrap: wrap;
   row-gap: 34px;
+}
+
+.service__item {
+  transition: filter 500ms linear;
 }
 
 .service__item.no-active {
