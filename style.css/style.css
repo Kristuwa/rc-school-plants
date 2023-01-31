@@ -93,11 +93,11 @@ a {
     background-color var(--time) var(--function-animation);
 }
 
-.button:hover,
+/* .button:hover,
 .button:focus {
   color: var(--btn-color-hover);
   background-color: var(--btn-hover-background);
-}
+} */
 
 /* ----------------------HEADER------------------ */
 header {
@@ -485,7 +485,7 @@ header {
   row-gap: 34px;
 }
 
-.service__item.active {
+.service__item.no-active {
   filter: blur(2px);
 }
 
