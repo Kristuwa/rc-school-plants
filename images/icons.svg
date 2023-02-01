@@ -2,4 +2,7 @@
 <path d="M23.734 10.304l-1.504-1.504-5.963 5.962-5.962-5.962-1.504 1.504 5.962 5.962-5.962 5.963 1.504 1.504 5.962-5.963 5.963 5.963 1.504-1.504-5.963-5.963 5.963-5.962z"></path>
 </symbol><symbol id="icon-burger" viewBox="0 0 49 32">
 <path fill="none" stroke="#717171" style="stroke: var(--color1, #717171)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4615" d="M0 1.231h49.231M0 11.077h49.231M0 20.923h49.231M0 30.769h49.231"></path>
+</symbol>
+<symbol id="icon-arrow-up" viewBox="0 0 48 32">
+<path fill="none" stroke="#fff" style="stroke: var(--color1, #fff)" stroke-linejoin="miter" stroke-linecap="round" stroke-miterlimit="4" stroke-width="4" d="M24 8l16 16M24 8l-16 16"></path>
 </symbol></defs></svg>

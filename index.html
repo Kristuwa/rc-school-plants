@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inika:wght@400;700&family=Inter:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inika:wght@300;400;700&family=Inter:wght@400;700&display=swap"
       rel="stylesheet"
     />
     <link
@@ -337,10 +337,38 @@
                   class="btn"
                   aria-label="open dropdown menu"
                 >
-                  <svg class="icon-btn" width="8" height="8">
+                  <svg class="icon-btn" width="8" height="8" data-name="basic">
                     <use href="./images/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
+                <div class="dropdawn-card" data-name="basic">
+                  <div class="dropdawn-card__top">
+                    <p class="dropdawn-card__title">Basic</p>
+                    <button
+                      type="button"
+                      class="btn"
+                      aria-label="close dropdown menu"
+                    >
+                      <svg class="icon-btn" width="8" height="8">
+                        <use href="./images/icons.svg#icon-arrow-up"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="dropdawn-card__bottom-text">
+                    Release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently
+                  </p>
+                  <p class="dropdawn-card__price">
+                    $15 <span class="dropdawn-card__time">/ per hour</span>
+                  </p>
+                  <button
+                    type="button"
+                    class="dropdawn-card__button"
+                    data-name="basic"
+                  >
+                    Order
+                  </button>
+                </div>
               </li>
               <li class="prices__item">
                 <p class="btn-title">Standard</p>
@@ -349,10 +377,43 @@
                   class="btn"
                   aria-label="open dropdown menu"
                 >
-                  <svg class="icon-btn" width="8" height="8">
+                  <svg
+                    class="icon-btn"
+                    width="8"
+                    height="8"
+                    data-name="standard"
+                  >
                     <use href="./images/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
+                <div class="dropdawn-card" data-name="standard">
+                  <div class="dropdawn-card__top">
+                    <p class="dropdawn-card__title">Standard</p>
+                    <button
+                      type="button"
+                      class="btn"
+                      aria-label="close dropdown menu"
+                    >
+                      <svg class="icon-btn" width="8" height="8">
+                        <use href="./images/icons.svg#icon-arrow-up"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="dropdawn-card__bottom-text">
+                    Release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently
+                  </p>
+                  <p class="dropdawn-card__price">
+                    $25 <span class="dropdawn-card__time">/ per hour</span>
+                  </p>
+                  <button
+                    type="button"
+                    class="dropdawn-card__button"
+                    data-name="standard"
+                  >
+                    Order
+                  </button>
+                </div>
               </li>
               <li class="prices__item">
                 <p class="btn-title">Pro care</p>
@@ -361,10 +422,43 @@
                   class="btn"
                   aria-label="open dropdown menu"
                 >
-                  <svg class="icon-btn" width="8" height="8">
+                  <svg
+                    class="icon-btn"
+                    width="8"
+                    height="8"
+                    data-name="procare"
+                  >
                     <use href="./images/icons.svg#icon-arrow"></use>
                   </svg>
                 </button>
+                <div class="dropdawn-card" data-name="procare">
+                  <div class="dropdawn-card__top">
+                    <p class="dropdawn-card__title">Pro care</p>
+                    <button
+                      type="button"
+                      class="btn"
+                      aria-label="close dropdown menu"
+                    >
+                      <svg class="icon-btn" width="8" height="8">
+                        <use href="./images/icons.svg#icon-arrow-up"></use>
+                      </svg>
+                    </button>
+                  </div>
+                  <p class="dropdawn-card__bottom-text">
+                    Release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently
+                  </p>
+                  <p class="dropdawn-card__price">
+                    $35 <span class="dropdawn-card__time">/ per hour</span>
+                  </p>
+                  <button
+                    type="button"
+                    class="dropdawn-card__button"
+                    data-name="procare"
+                  >
+                    Order
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
@@ -397,25 +491,147 @@
             <h2 class="contacts__title">Contact us</h2>
             <div class="dropdown-menu">
               <p class="menu-text">City</p>
-              <button type="button" class="btn" aria-label="open dropdown menu">
+              <button
+                type="button"
+                class="btn btn-contacts"
+                aria-label="open dropdown menu"
+              >
                 <svg class="icon-btn" width="6" height="3">
                   <use href="./images/icons.svg#icon-arrow"></use>
                 </svg>
               </button>
               <ul class="list-style city-menu">
                 <li class="city-menu__item">
-                  <p class="city-menu__text">Canandaigua, NY</p>
+                  <p class="city-menu__text" data-name="canandaigua">
+                    Canandaigua, NY
+                  </p>
                 </li>
                 <li class="city-menu__item">
-                  <p class="city-menu__text">New York City</p>
+                  <p class="city-menu__text" data-name="newYork">
+                    New York City
+                  </p>
                 </li>
                 <li class="city-menu__item">
-                  <p class="city-menu__text">Yonkers, NY</p>
+                  <p class="city-menu__text" data-name="yonkers">Yonkers, NY</p>
                 </li>
                 <li class="city-menu__item">
-                  <p class="city-menu__text">Sherrill, NY</p>
+                  <p class="city-menu__text" data-name="sherrill">
+                    Sherrill, NY
+                  </p>
                 </li>
               </ul>
+              <div class="card-information" data-name="canandaigua">
+                <table class="card-information__table">
+                  <tbody>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">City:</td>
+                      <td class="card-information__column-two">
+                        Canandaigua, NY
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">Phone:</td>
+                      <td class="card-information__column-two">
+                        +1 585 393 0001
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">
+                        Office adress:
+                      </td>
+                      <td class="card-information__column-two">
+                        151 Charlotte Street
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="card-information__button" href="tel:+15853930001">
+                  Call us
+                </a>
+              </div>
+              <div class="card-information" data-name="newYork">
+                <table class="card-information__table">
+                  <tbody>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">City:</td>
+                      <td class="card-information__column-two">
+                        New York City
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">Phone:</td>
+                      <td class="card-information__column-two">
+                        +1 212 456 0002
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">
+                        Office adress:
+                      </td>
+                      <td class="card-information__column-two">
+                        9 East 91st Street
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="card-information__button" href="tel:+12124560002">
+                  Call us
+                </a>
+              </div>
+              <div class="card-information" data-name="yonkers">
+                <table class="card-information__table">
+                  <tbody>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">City:</td>
+                      <td class="card-information__column-two">Yonkers, NY</td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">Phone:</td>
+                      <td class="card-information__column-two">
+                        +1 914 678 0003
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">
+                        Office adress:
+                      </td>
+                      <td class="card-information__column-two">
+                        511 Warburton Ave
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="card-information__button" href="tel:+19146780003">
+                  Call us
+                </a>
+              </div>
+              <div class="card-information" data-name="sherrill">
+                <table class="card-information__table">
+                  <tbody>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">City:</td>
+                      <td class="card-information__column-two">Sherrill, NY</td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">Phone:</td>
+                      <td class="card-information__column-two">
+                        +1 315 908 0004
+                      </td>
+                    </tr>
+                    <tr class="card-information__row">
+                      <td class="card-information__column-one">
+                        Office adress:
+                      </td>
+                      <td class="card-information__column-two">
+                        14 WEST Noyes BLVD
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <a class="card-information__button" href="tel:+13159080004">
+                  Call us
+                </a>
+              </div>
             </div>
           </div>
           <img
@@ -516,9 +732,10 @@
       </div>
     </footer>
 
-    <script defer src="./js/index.js" type="module"></script>
-    <script defer src="./js/mobile-menu.js" type="module"></script>
-    <script defer src="./js/select-card.js" type="module"></script>
-
+    <script defer src="./js/index.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
+    <script defer src="./js/select-card.js"></script>
+    <script defer src="./js/price-card.js"></script>
+    <script defer src="./js/contacts-card.js"></script>
   </body>
 </html>
