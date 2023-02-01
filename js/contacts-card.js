@@ -11,8 +11,11 @@
   listContacts.addEventListener("click", onCityClick);
 
   function onDropdawnMenuClick(e) {
-    listContacts.classList.toggle("active");
-    cityMenu.classList.toggle("active");
+    if (cityMenu.classList.contains("active")) {
+      cityMenu.classList.remove("active");
+    } else {
+      cityMenu.classList.add("active");
+    }
   }
 
   function onCityClick(e) {
@@ -30,8 +33,14 @@
         }
       }
     });
-    cityMenu.classList.toggle("active");
-    contactsImg.classList.add("active");
-    sectionContacts.classList.add("active");
+
+    listContacts.classList.add("active");
+    cityMenu.classList.remove("active");
+    if (!contactsImg.classList.contains("active")) {
+      contactsImg.classList.add("active");
+    }
+    if (!sectionContacts.classList.contains("active")) {
+      sectionContacts.classList.add("active");
+    }
   }
 })();
