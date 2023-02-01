@@ -898,10 +898,6 @@ header {
   padding-top: 25px;
 }
 
-/* .contacts .container {
-  min-height: 445px;
-} */
-
 .contacts__title {
   font-family: Inika, serif;
   font-weight: 700;
@@ -992,8 +988,7 @@ header {
 }
 
 .contacts__img {
-  opacity: 1;
-  visibility: visible;
+  display: block;
   width: 100px;
   height: 125px;
 }
@@ -1004,7 +999,7 @@ header {
 
 .card-information.is-open {
   position: absolute;
-  top: 97px;
+  top: 99px;
   left: 0;
   display: block;
   padding: 23px 30px;
@@ -1016,32 +1011,34 @@ header {
   border-radius: 20px;
 }
 .card-information__table {
+	height: 115px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2.5;
+	letter-spacing: 0.05em;
   margin-bottom: 24px;
 }
 .card-information__row {
-  margin-bottom: 5px;
+display: flex;
+align-items: center;
+	max-height: 32px;
+	margin-bottom: 5px;
 }
 .card-information__column-one {
   width: 65px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 2.5;
-  letter-spacing: 0.05em;
+  
   color: var(--btn-color);
   margin-right: 5px;
 }
 .card-information__column-two {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 2.5;
-  letter-spacing: 0.05em;
+
   color: var(--secondary-text-color);
 }
 
-.card-information__row:nth-child(3) .card-information__column-two,
-.card-information__row:nth-child(3) .card-information__column-one {
+.card-information__row:nth-child(3) .card-information__column-two {
   line-height: 1.25;
 }
+
 .card-information__button {
   cursor: pointer;
   width: 122px;
@@ -1077,17 +1074,28 @@ header {
 }
 
 @media screen and (max-width: 767px) {
+
+
   .contacts.active .container {
     padding-bottom: 33px;
   }
+
+  .contacts.active .contacts__title {
+	margin-bottom: 42px;
+ }
+
   .contacts__img.active {
-    opacity: 0;
-    visibility: hidden;
+    display: none;
     margin-bottom: 75px;
   }
   .dropdown-menu.active {
-    margin-bottom: 49px;
+    margin-bottom: 261px;
   }
+
+  .card-information__row:nth-child(3) .card-information__column-one {
+	line-height: 1.25;
+ }
+ 
 }
 
 @media screen and (min-width: 768px) {
@@ -1109,8 +1117,10 @@ header {
   .card-information.is-open {
     width: 448px;
     height: 214px;
+	 top:111px;
     padding: 17px 33px 32px;
   }
+  
   .city-menu {
     width: 450px;
   }
@@ -1127,10 +1137,13 @@ header {
     width: 450px;
     margin-bottom: 250px;
   }
+   .city-menu.active {
+	width: 450px;
+ }
 
-  .dropdown-menu.active {
-    margin-bottom: 61px;
-  }
+ .dropdown-menu.active {
+	margin-bottom: 289px;
+ }
 }
 
 @media screen and (max-width: 1439px) {
@@ -1170,6 +1183,8 @@ header {
     margin-right: 0;
     margin-bottom: 0;
   }
+  .card-information.is-open {
+	top: 97px;}
 }
 
 /* ----------------------FOOTER------------------ */
