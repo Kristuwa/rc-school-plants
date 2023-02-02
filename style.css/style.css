@@ -485,11 +485,10 @@ header {
 }
 
 
- .service__button.active:hover, .service__button.active:focus {
+ .service__button.active:hover:not([disabled]), .service__button.active:focus:not([disabled]) {
 	transition-delay: 5ms;
 	background-color: transparent;
 	color: var(--btn-hover-background);
-	
  }
 
 .service__list {

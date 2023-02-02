@@ -19,8 +19,13 @@
       //если нажато уже 2 кнопки, то класс не добавляем
       if (activeListBtn.length <= 2) {
         e.target.classList.add("active");
-        e.target.style = "color: #ffffff; background-color: #e06733";
-
+        e.target.style = "color: #ffffff; background-color: #e06733;";
+        e.target.addEventListener("mouseover", () => {
+          e.target.style = "color: #e06733; background-color:transparent";
+        });
+        e.target.addEventListener("mouseout", () => {
+          e.target.style = "color: #ffffff; background-color: #e06733;";
+        });
         if (activeListBtn.length === 2) {
           [...buttonsList].map((item) => {
             if (item.classList.contains("active")) {
@@ -39,7 +44,12 @@
       );
       e.target.classList.remove("active");
       e.target.style = "color: #e06733; background-color:transparent";
-
+      e.target.addEventListener("mouseover", () => {
+        e.target.style = "color: #ffffff; background-color: #e06733;";
+      });
+      e.target.addEventListener("mouseout", () => {
+        e.target.style = "color: #e06733; background-color:transparent";
+      });
       if (activeListBtn.length === 1) {
         [...buttonsList].map((item) => {
           item.disabled = false;
