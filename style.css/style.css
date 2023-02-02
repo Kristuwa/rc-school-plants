@@ -96,7 +96,7 @@ a {
 
 .button:hover,
 .button:focus {
-  transition-delay: 5ms;
+  /* transition-delay: 5ms; */
   color: var(--btn-color-hover);
   background-color: var(--btn-hover-background);
 }
@@ -445,10 +445,6 @@ header {
   background-color: var(--primary-bg-color);
 }
 
-/* .service .container {
-	width: 100%;
- } */
-
 .button-container {
   display: flex;
   gap: 10px;
@@ -464,6 +460,7 @@ header {
 }
 
 .service__button {
+	cursor: pointer;
   width: 121px;
   height: 35px;
   border: 1px solid var(--btn-hover-background);
@@ -471,15 +468,29 @@ header {
   font-family: "Inika";
   font-size: 15px;
   line-height: 1.33;
+  background-color: transparent;
   color: var(--btn-hover-background);
-  transition: color 500ms var(--function-animation),
-    background-color 500ms var(--function-animation);
+  transition: color var(--time) var(--function-animation),
+    background-color var(--time) var(--function-animation);
 }
 
-/* .service__button.active {
-	color: var(--btn-color-hover);
-	background-color: var(--btn-hover-background);
- } */
+.service__button[disabled] {
+	pointer-events: none;
+}
+
+.service__button:hover:not([disabled]),
+.service__button:focus:not([disabled]){
+    color: var(--btn-color-hover);
+  background-color: var(--btn-hover-background);
+}
+
+
+ .service__button.active:hover, .service__button.active:focus {
+	transition-delay: 5ms;
+	background-color: transparent;
+	color: var(--btn-hover-background);
+	
+ }
 
 .service__list {
   margin: 0 auto;
