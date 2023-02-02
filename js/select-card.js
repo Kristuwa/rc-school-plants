@@ -39,6 +39,7 @@
       );
       e.target.classList.remove("active");
       e.target.style = "color: #e06733; background-color:transparent";
+
       if (activeListBtn.length === 1) {
         [...buttonsList].map((item) => {
           item.disabled = false;
