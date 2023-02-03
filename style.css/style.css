@@ -698,9 +698,10 @@ header {
   top: 0;
   left: 0;
   display: block;
-  padding: 16px 40px;
+  padding: 16px 20px;
+  width: 180px;
   background-color: var(--card-bg-color);
-  width: 250px;
+
   border-radius: 20px;
   z-index: 1;
 }
@@ -876,6 +877,10 @@ header {
   }
   .contacts-block {
     padding-top: 99px;
+  }
+  .dropdawn-card.open {
+	padding: 16px 40px;
+  width: 250px;
   }
 }
 @media screen and (min-width: 1440px) {

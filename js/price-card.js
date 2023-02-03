@@ -4,15 +4,14 @@
   const orderBtns = document.querySelectorAll(".dropdawn-card__button");
 
   function onOrderClick(e) {
-    window.scrollTo({
-      top: 3800,
-      left: 0,
+    document.querySelector("#contacts").scrollIntoView({
       behavior: "smooth",
+      block: "start",
     });
   }
 
   function onClickBtn(e) {
-    if (e.target.nodeName !== "svg") {
+    if (e.target.nodeName !== "svg" && e.target.nodeName !== "BUTTON") {
       return;
     }
 
