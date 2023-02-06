@@ -635,11 +635,11 @@ header {
 
 .prices__list {
   width: 224px;
-  height: 235px;
   padding: 29px 22px;
   border: 1px solid #e3e1d5;
   border-radius: 20px;
 }
+
 
 .prices__item {
   position: relative;
@@ -656,6 +656,9 @@ header {
 .prices__item + .prices__item {
   margin-top: 14px;
 }
+.prices__item.open {
+	margin-bottom: 139px;
+ }
 
 .btn {
   display: flex;
@@ -839,8 +842,7 @@ header {
   }
   .prices__list {
     width: 332px;
-    height: 282px;
-    padding: 34px 41px;
+       padding: 34px 41px;
     border: 1px solid #e3e1d5;
     border-radius: 20px;
   }
@@ -852,6 +854,10 @@ header {
   .prices__item + .prices__item {
     margin-top: 32px;
   }
+
+  .prices__item.open {
+	margin-bottom: 124px;
+ }
   .prices__text {
     width: 296px;
     font-size: 25px;
