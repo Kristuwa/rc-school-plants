@@ -18,6 +18,9 @@
     [...dropdawnCards].map((item) => {
       if (item.dataset.name === e.target.dataset.name) {
         item.classList.add("open");
+
+        item.closest(".prices__item").classList.add("open");
+
         const orderBtn = [...orderBtns].find(
           (item) => item.dataset.name === e.target.dataset.name
         );
@@ -25,6 +28,8 @@
       } else {
         if (item.classList.contains("open")) {
           item.classList.remove("open");
+          listRef.classList.remove("open");
+          item.closest(".prices__item").classList.remove("open");
         }
       }
     });
